@@ -1579,7 +1579,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  await get_user.run();\n  if (get_user.data) {\n    await get_user_uuid.run();\n    if (get_user_uuid.data) {\n      const getUUID = get_user_uuid.data[0].user_id;\n      storeValue(\"user\", {\n        \"UserID\": getUUID\n      }, true);\n    } else {\n      console.error('get_user_uuid.data is undefined');\n    }\n  } else {\n    console.error('get_user.data is undefined');\n  }\n}"
+                "async () => {\n  await get_user.run();\n  if (get_user.data) {\n    await get_user_uuid.run();\n    if (get_user_uuid.data) {\n      const getUUID = get_user_uuid.data[0].user_id;\n      storeValue(\"UserID\", getUUID);\n    } else {\n      console.error('get_user_uuid.data is undefined');\n    }\n  } else {\n    console.error('get_user.data is undefined');\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -5,7 +5,7 @@ export default {
 			await get_user_uuid.run();
 			if (get_user_uuid.data) {
 				const getUUID = get_user_uuid.data[0].user_id;
-				storeValue("user", {"UserID": getUUID}, true);
+				storeValue("UserID", getUUID);
 			} else {
 				console.error('get_user_uuid.data is undefined');
 			}
