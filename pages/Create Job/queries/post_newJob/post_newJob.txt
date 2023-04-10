@@ -1,8 +1,0 @@
-{
-	"email_recruiter": "{{appsmith.store.user.Email}}",
-	"title": "{{input_jobTitle_createJob.text}}",
-	"description": "{{input_description_createJob.text}}",
-	"company_name": "{{input_companyName_createJob.text}}",
-	"salary": "{{input_salary_createJob.text}}",
-	"location": "{{input_location_createJob.text}}"
-}
