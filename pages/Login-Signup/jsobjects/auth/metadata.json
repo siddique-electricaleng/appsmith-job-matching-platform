@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "auth",
+    "pageId": "Login-Signup",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Login-Signup_auth",
+  "deleted": false,
+  "gitSyncId": "640777b77ef0f50d075ddb01_6408bb389ca6ca5e7f0ebb92"
+}

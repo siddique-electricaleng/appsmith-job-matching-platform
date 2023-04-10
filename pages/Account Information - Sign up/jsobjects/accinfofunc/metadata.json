@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "accinfofunc",
+    "pageId": "Account Information - Sign up",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Account Information - Sign up_accinfofunc",
+  "deleted": false,
+  "gitSyncId": "640777b77ef0f50d075ddb01_6430040e2ba29e5f389a59ba"
+}

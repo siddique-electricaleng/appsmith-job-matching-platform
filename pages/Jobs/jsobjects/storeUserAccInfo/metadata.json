@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "storeUserAccInfo",
+    "pageId": "Jobs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Jobs_storeUserAccInfo",
+  "deleted": false,
+  "gitSyncId": "640777b77ef0f50d075ddb01_6426bf6fb6f92c776bb42ce6"
+}

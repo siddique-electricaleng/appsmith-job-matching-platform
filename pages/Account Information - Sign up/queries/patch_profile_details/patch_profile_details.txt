@@ -1,0 +1,6 @@
+{
+	"first_name": "{{firstName_accountDetails.text}}",
+	"last_name" : "{{lastName_accountDetails.text}}",
+	"role": "{{role_accountDetails.selectedOptionLabel}}",
+	"phone": "{{phone_accountDetails.dialCode.trim() + phone_accountDetails.value.trim()}}"
+}

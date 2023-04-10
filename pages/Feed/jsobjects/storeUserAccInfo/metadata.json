@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "storeUserAccInfo",
+    "pageId": "Feed",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Feed_storeUserAccInfo",
+  "deleted": false,
+  "gitSyncId": "640777b77ef0f50d075ddb01_64267169b6f92c776bb42cd9"
+}
