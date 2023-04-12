@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/storage/v1/object/public/resume/{{filepicker_resume_submission.files[0].name}}",
+      "path": "/storage/v1/object/public/resume/{{appsmith.store.user.fileNameResume}}",
       "headers": [
         {
           "key": "Authorization",
@@ -39,7 +39,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -53,9 +53,9 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.access_token",
-      "filepicker_resume_submission.files[0].name"
+      "appsmith.store.user.fileNameResume"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

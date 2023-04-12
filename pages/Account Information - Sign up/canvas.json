@@ -1338,7 +1338,7 @@
                               ],
                               "isDisabled": false,
                               "key": "e8qg2gnbq9",
-                              "onFilesSelected": "{{post_resume.run()}}",
+                              "onFilesSelected": "{{accinfofunc.setResumeFileName()}}",
                               "isRequired": false,
                               "isDeprecated": false,
                               "rightColumn": 60,
@@ -1364,7 +1364,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button5",
-                              "onClick": "{{post_resume.run()}}",
+                              "onClick": "{{post_resume.run(() => get_resume.run(), () => {})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1811,13 +1811,26 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Account Information - Sign up_accinfofunc.setResumeFileName",
+              "name": "accinfofunc.setResumeFileName",
+              "collectionId": "Account Information - Sign up_accinfofunc",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await get_user.run();\n  if (get_user.data) {\n    var fileNameResume;\n    var fileNameResumeExtension = 'pdf';\n    const email = get_user.data.email;\n    const indexOfDot = email.indexOf('.');\n    const indexOfAt = email.indexOf('@');\n    if (indexOfAt < indexOfDot || indexOfDot == -1) {\n      let imagePrefix = email.substring(0, indexOfAt);\n      fileNameResume = imagePrefix + '.' + fileNameResumeExtension;\n    } else if (indexOfAt > indexOfDot) {\n      let emailSplit = email.split('@');\n      let emailNoDom = emailSplit[0];\n      emailNoDom = emailNoDom.replace(/\\./g, '_');\n      emailNoDom = emailNoDom.replace(/ /g, '_');\n      fileNameResume = emailNoDom + '.' + fileNameResumeExtension;\n    } else {\n      console.log('File name of image does not contain a period character');\n    }\n    const userObjUpFile = appsmith.store.user;\n    userObjUpFile.fileNameResume = fileNameResume;\n    storeValue(\"user\", userObjUpFile);\n    if (filepicker_resume_submission.files.length > 0) {\n      _.assign(filepicker_resume_submission.files[0], {\n        name: fileNameResume\n      });\n    } else {\n      await get_resume.run();\n    }\n  } else {\n    console.error('get_user.data is undefined');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Account Information - Sign up_accinfofunc.getImgNameAndImg",
               "name": "accinfofunc.getImgNameAndImg",
               "collectionId": "Account Information - Sign up_accinfofunc",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const userObj = appsmith.store.user;\n  var fileNameExtensions = ['png', 'jpg', 'jpeg'];\n  var imageNamePre;\n  var fileName;\n  await get_user.run();\n  if (get_user.data) {\n    const email = get_user.data.email;\n    const indexOfDot = email.indexOf('.');\n    const indexOfAt = email.indexOf('@');\n    if (indexOfAt < indexOfDot || indexOfDot == -1) {\n      imageNamePre = email.substring(0, indexOfAt);\n    } else if (indexOfAt > indexOfDot) {\n      let emailSplit = email.split('@');\n      imageNamePre = emailSplit[0];\n      imageNamePre = imageNamePre.replace(/\\./g, '_');\n      imageNamePre = imageNamePre.replace(/ /g, '_');\n    }\n    for (let i = 0; i < fileNameExtensions.length; i++) {\n      try {\n        fileName = imageNamePre + '.' + fileNameExtensions[i];\n        userObj.fileName = fileName;\n        storeValue(\"user\", userObj);\n        const response = await get_images.run();\n        console.log(response.data);\n        if (typeof response !== 'undefined') {\n          userObj.fileName = fileName;\n          storeValue(\"user\", userObj);\n          console.log(\"Successfully saved the fileName\");\n          break;\n        }\n      } catch (error) {\n        console.error('Error occurred');\n        continue;\n      }\n    }\n  }\n}"
+                "async () => {\n  const userObj = appsmith.store.user;\n  var fileNameExtensions = ['png', 'jpg', 'jpeg'];\n  var imageNamePre;\n  var fileName;\n  await get_user.run();\n  if (get_user.data) {\n    const email = get_user.data.email;\n    const indexOfDot = email.indexOf('.');\n    const indexOfAt = email.indexOf('@');\n    if (indexOfAt < indexOfDot || indexOfDot == -1) {\n      imageNamePre = email.substring(0, indexOfAt);\n    } else if (indexOfAt > indexOfDot) {\n      let emailSplit = email.split('@');\n      imageNamePre = emailSplit[0];\n      imageNamePre = imageNamePre.replace(/\\./g, '_');\n      imageNamePre = imageNamePre.replace(/ /g, '_');\n    }\n    for (let i = 0; i < fileNameExtensions.length; i++) {\n      try {\n        fileName = imageNamePre + '.' + fileNameExtensions[i];\n        userObj.fileName = fileName;\n        storeValue(\"user\", userObj);\n        const response = await get_images.run();\n        console.log(response.data);\n        if (typeof response !== 'undefined') {\n          userObj.fileName = fileName;\n          storeValue(\"user\", userObj);\n          console.log(\"Successfully saved the fileName\");\n          break;\n        }\n      } catch (error) {\n        continue;\n      }\n    }\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -1829,17 +1842,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  await get_user.run();\n  if (get_user.data) {\n    await get_user_uuid.run();\n    if (get_user_uuid.data.length > 0) {\n      const getUUID = get_user_uuid.data[0].user_id;\n      const user = appsmith.store.user;\n      user.UUID = getUUID;\n      storeValue(\"user\", user);\n    } else {\n      console.error('get_user_uuid.data is undefined');\n    }\n  } else {\n    console.error('get_user.data is undefined');\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Account Information - Sign up_get_resume",
-              "name": "get_resume",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token",
-                "filepicker_resume_submission.files[0].name"
               ],
               "timeoutInMillisecond": 10000
             }
