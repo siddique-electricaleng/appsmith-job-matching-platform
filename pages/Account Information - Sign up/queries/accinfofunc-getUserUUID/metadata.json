@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getaccinfo",
-    "fullyQualifiedName": "accinfofunc.getaccinfo",
+    "name": "getUserUUID",
+    "fullyQualifiedName": "accinfofunc.getUserUUID",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Account Information - Sign up_accinfofunc.getaccinfo",
+  "id": "Account Information - Sign up_accinfofunc.getUserUUID",
   "deleted": false,
   "gitSyncId": "640777b77ef0f50d075ddb01_6430042b2ba29e5f389a59bc"
 }

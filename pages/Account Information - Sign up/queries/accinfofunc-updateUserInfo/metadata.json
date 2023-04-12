@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setImageName",
-    "fullyQualifiedName": "accinfofunc.setImageName",
+    "name": "updateUserInfo",
+    "fullyQualifiedName": "accinfofunc.updateUserInfo",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Account Information - Sign up_accinfofunc.setImageName",
+  "id": "Account Information - Sign up_accinfofunc.updateUserInfo",
   "deleted": false,
-  "gitSyncId": "640777b77ef0f50d075ddb01_643145d3c3818a745ca00976"
+  "gitSyncId": "640777b77ef0f50d075ddb01_6433f5784efe363bc8746b3c"
 }

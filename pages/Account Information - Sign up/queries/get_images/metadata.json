@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/storage/v1/object/public/public-profile-images/{{appsmith.store.profilePicName}}",
+      "path": "/storage/v1/object/public/public-profile-images/{{appsmith.store.user.fileName}}",
       "headers": [
         {
           "key": "Authorization",
@@ -39,7 +39,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -53,7 +53,7 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.access_token",
-      "appsmith.store.profilePicName"
+      "appsmith.store.user.fileName"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

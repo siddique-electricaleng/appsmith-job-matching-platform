@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setImageName",
-    "fullyQualifiedName": "accinfofunc.setImageName",
+    "name": "getImgNameAndImg",
+    "fullyQualifiedName": "accinfofunc.getImgNameAndImg",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Account Information - Sign up_accinfofunc.setImageName",
+  "id": "Account Information - Sign up_accinfofunc.getImgNameAndImg",
   "deleted": false,
-  "gitSyncId": "640777b77ef0f50d075ddb01_643145d3c3818a745ca00976"
+  "gitSyncId": "640777b77ef0f50d075ddb01_643444a74efe363bc8746b59"
 }

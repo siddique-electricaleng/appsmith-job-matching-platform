@@ -39,7 +39,7 @@
   "color": "#EAEDFB",
   "icon": "bag",
   "unpublishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "TABLET_LARGE"
