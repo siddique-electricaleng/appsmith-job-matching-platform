@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setImageName",
-    "fullyQualifiedName": "accinfofunc.setImageName",
+    "name": "setPFileName",
+    "fullyQualifiedName": "accinfofunc.setPFileName",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -16,7 +16,7 @@
     "pageId": "Account Information - Sign up",
     "collectionId": "Account Information - Sign up_accinfofunc",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Account Information - Sign up_accinfofunc.setImageName",
+  "id": "Account Information - Sign up_accinfofunc.setPFileName",
   "deleted": false,
-  "gitSyncId": "640777b77ef0f50d075ddb01_643145d3c3818a745ca00976"
+  "gitSyncId": "640777b77ef0f50d075ddb01_64367fc693000c270821fa55"
 }

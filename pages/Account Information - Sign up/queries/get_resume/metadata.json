@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_images",
+    "name": "get_resume",
     "datasource": {
       "name": "Auth",
       "pluginId": "restapi-plugin",
@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/storage/v1/object/public/public-profile-images/{{appsmith.store.user.fileName}}",
+      "path": "/storage/v1/object/public/resume/{{filepicker_resume_submission.files[0].name}}",
       "headers": [
         {
           "key": "Authorization",
@@ -39,7 +39,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "path"
@@ -53,14 +53,14 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.access_token",
-      "appsmith.store.user.fileName"
+      "filepicker_resume_submission.files[0].name"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Account Information - Sign up_get_images",
+  "id": "Account Information - Sign up_get_resume",
   "deleted": false,
-  "gitSyncId": "640777b77ef0f50d075ddb01_642e32d62ba29e5f389a598e"
+  "gitSyncId": "640777b77ef0f50d075ddb01_6436810493000c270821fa5a"
 }

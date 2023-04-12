@@ -30,14 +30,11 @@ export default {
 			console.error('get_user.data is undefined');
 		}
 	},
-	setImageName: async()=>{
+	setImgFileName: async()=>{
 		await get_user.run();
-		// var fileName;
-		// var fileNameParts;
-		// var fileExtensions = ['jpg','png','jpeg'];
 		if (get_user.data) {
-				var fileName = filepicker_profilepic.files[0].name;
-				var fileNameParts = fileName.split('.');
+			var fileName = filepicker_profilepic.files[0].name;
+			var fileNameParts = fileName.split('.');
 
 			const email = get_user.data.email;
 			// getting the indexes of wherever we encounter '.' or the '@' character
@@ -46,17 +43,6 @@ export default {
 			if ((indexOfAt<indexOfDot)||(indexOfDot == -1)){
 				let imagePrefix = email.substring(0,indexOfAt);
 				fileName = imagePrefix+'.'+fileNameParts[1];
-				// else{
-					// for (let i=1;i<=fileExtensions.length;i++){
-						// fileNameParts[1] = fileExtensions[i];
-						// fileName = imagePrefix+'.'+fileNameParts[1];
-						// 
-						// const response = await get_images.run();
-						// if(response.status===200){
-							// break;
-						// }
-					// }
-				// }
 			}
 			else if(indexOfAt>indexOfDot){
 					let emailSplit = email.split('@');
@@ -64,16 +50,6 @@ export default {
 					emailNoDom = emailNoDom.replace(/\./g, '_');
 					emailNoDom = emailNoDom.replace(/ /g, '_');
 					fileName = emailNoDom+'.'+fileNameParts[1];
-				// else{
-					// for (let i=1;i<=fileExtensions.length;i++){
-						// fileNameParts[1] = fileExtensions[i];
-						// fileName = emailNoDom + '.' + fileNameParts[1];
-						// const response = await get_images.run();
-						// if(response.status===200){
-							// break;
-						// }
-					// }
-				// }
 			}
 			else{
 					console.log('File name of image does not contain a period character');
@@ -82,6 +58,38 @@ export default {
 			userObjUpFile.fileName = fileName;
 			storeValue("user",userObjUpFile);
 			_.assign(filepicker_profilepic.files[0],{name:fileName});
+		} else {
+			console.error('get_user.data is undefined');
+		}
+	},
+	setResumeFileName: async()=>{
+		await get_user.run();
+		if (get_user.data) {
+			var fileNameResume = filepicker_resume_submission.files[0].name;
+			var fileNameResumeParts = fileNameResume.split('.');
+
+			const email = get_user.data.email;
+			// getting the indexes of wherever we encounter '.' or the '@' character
+			const indexOfDot = email.indexOf('.');
+			const indexOfAt = email.indexOf('@');
+			if ((indexOfAt<indexOfDot)||(indexOfDot == -1)){
+				let imagePrefix = email.substring(0,indexOfAt);
+				fileNameResume = imagePrefix+'.'+fileNameResumeParts[1];
+			}
+			else if(indexOfAt>indexOfDot){
+					let emailSplit = email.split('@');
+					let emailNoDom = emailSplit[0];
+					emailNoDom = emailNoDom.replace(/\./g, '_');
+					emailNoDom = emailNoDom.replace(/ /g, '_');
+					fileNameResume = emailNoDom+'.'+fileNameResumeParts[1];
+			}
+			else{
+					console.log('File name of image does not contain a period character');
+			}
+			const userObjUpFile = appsmith.store.user;
+			userObjUpFile.fileNameResume = fileNameResume;
+			storeValue("user",userObjUpFile);
+			_.assign(filepicker_resume_submission.files[0],{name:fileNameResume});
 		} else {
 			console.error('get_user.data is undefined');
 		}

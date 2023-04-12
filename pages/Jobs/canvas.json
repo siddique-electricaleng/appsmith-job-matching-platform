@@ -517,7 +517,7 @@
                       "originalTopRow": 0,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 10,
                       "minDynamicHeight": 10
                     },
                     {
@@ -574,10 +574,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 6,
+                      "originalTopRow": 10,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
+                      "originalBottomRow": 14,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     },
@@ -1010,7 +1010,7 @@
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
-                              "bottomRow": 48,
+                              "bottomRow": 50,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 70,
@@ -1334,10 +1334,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 10,
+                      "originalTopRow": 14,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 66,
+                      "originalBottomRow": 70,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -1375,12 +1375,24 @@
               "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 68,
+              "originalBottomRow": 72,
               "minDynamicHeight": 10
             }
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Jobs_get_jobListings",
+              "name": "get_jobListings",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Jobs_storeUserAccInfo.storeUserAccInfo",
@@ -1390,18 +1402,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  await get_user.run();\n  if (get_user.data) {\n    const getEmail = get_user.data.email;\n    await get_userRoleName.run();\n    if (get_userRoleName.data) {\n      const getRole = get_userRoleName.data[0].role;\n      const getName = get_userRoleName.data[0].first_name + ' ' + get_userRoleName.data[0].last_name;\n      storeValue(\"user\", {\n        \"Email\": getEmail,\n        \"Role\": getRole,\n        \"Name\": getName\n      }, true);\n    } else {\n      console.error('get_userRoleName.data is undefined');\n    }\n  } else {\n    console.error('get_user.data is undefined');\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Jobs_get_jobListings",
-              "name": "get_jobListings",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
             }

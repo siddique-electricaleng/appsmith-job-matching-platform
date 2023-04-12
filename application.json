@@ -42,7 +42,7 @@
     "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
