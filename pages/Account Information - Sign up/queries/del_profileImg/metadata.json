@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/storage/v1/object/public/public-profile-images/{{appsmith.store.user.fileName}}",
+      "path": "/storage/v1/object/public-profile-images/{{appsmith.store.user.fileName}}",
       "headers": [
         {
           "key": "Authorization",
