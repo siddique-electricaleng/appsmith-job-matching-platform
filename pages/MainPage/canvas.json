@@ -13,15 +13,17 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 560,
+          "bottomRow": 870,
           "containerStyle": "none",
           "snapRows": 85,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 79,
           "minHeight": 870,
+          "useAutoLayout": true,
           "parentColumnSpace": 1,
+          "responsiveBehavior": "fill",
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
@@ -34,8 +36,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 14,
-              "bottomRow": 19,
+              "topRow": 0,
+              "bottomRow": 4,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -44,7 +46,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 26,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -60,11 +62,13 @@
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
               "text": "Main Page",
               "key": "3yzidz212x",
+              "flexVerticalAlignment": "end",
               "isDeprecated": false,
-              "rightColumn": 37,
+              "rightColumn": 64,
               "textAlign": "CENTER",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "cvhslcmyfp",
+              "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
@@ -73,10 +77,12 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "originalTopRow": 14,
+              "responsiveBehavior": "fill",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "originalBottomRow": 19,
               "fontSize": "1.875rem",
+              "alignment": "center",
               "minDynamicHeight": 4
             },
             {
@@ -86,8 +92,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
-              "topRow": 21,
-              "bottomRow": 56,
+              "topRow": 5.2,
+              "bottomRow": 42.4,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -95,7 +101,7 @@
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 13,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -115,25 +121,87 @@
                   "tabId": "tab1",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
-                  "bottomRow": 350,
+                  "bottomRow": 371.99999999999994,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 150,
+                  "minHeight": 340,
+                  "useAutoLayout": true,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "logout_button",
+                      "onClick": "{{ \n  (() => {\n    storeValue(\"jwt\", undefined);\n    navigateTo(\"login_Secondary\");\n  })()\n}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "tooltip": "Log Out of the Account",
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.0703125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Log out",
+                      "isDisabled": false,
+                      "key": "q9rc7qzz7t",
+                      "flexVerticalAlignment": "end",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "vb67jnfpmh",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "bdu4iwz3zi",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "hug",
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER",
+                      "alignment": "end"
+                    },
+                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 5,
+                      "topRow": 5.2,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -174,6 +242,7 @@
                       "leftColumn": 0,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
+                      "flexVerticalAlignment": "end",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": true,
                       "isVisible": true,
@@ -209,6 +278,7 @@
                       "defaultSelectedRowIndices": [
                         0
                       ],
+                      "alignment": "start",
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
@@ -219,7 +289,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 33,
+                      "bottomRow": 35.2,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -327,7 +397,7 @@
                       "key": "o7bm9ecbia",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "f8gde46rp4",
                       "tableData": [
@@ -350,73 +420,19 @@
                           "action": ""
                         }
                       ],
+                      "minWidth": 450,
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "bdu4iwz3zi",
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
+                      "responsiveBehavior": "fill",
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
-                    },
-                    {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "logout_button",
-                      "onClick": "{{ \n  (() => {\n    storeValue(\"jwt\", undefined);\n    navigateTo(\"login_Secondary\");\n  })()\n}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "tooltip": "Log Out of the Account",
-                      "parentRowSpace": 10,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 12.0703125,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 46,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Log out",
-                      "isDisabled": false,
-                      "key": "q9rc7qzz7t",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "vb67jnfpmh",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "bdu4iwz3zi",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
                     }
                   ],
+                  "positioning": "vertical",
                   "isDisabled": false,
                   "key": "6pygm6o2kx",
                   "isDeprecated": false,
@@ -428,20 +444,40 @@
                   "version": 1,
                   "parentId": "in40vu2tv0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "responsiveBehavior": "fill",
+                  "flexLayers": [
+                    {
+                      "children": [
+                        {
+                          "id": "vb67jnfpmh",
+                          "align": "end"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "id": "f8gde46rp4",
+                          "align": "start"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "tabId": "tab2",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
-                  "bottomRow": 350,
+                  "bottomRow": 300,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 150,
+                  "minHeight": 60,
+                  "useAutoLayout": true,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -456,8 +492,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 3,
-                      "bottomRow": 7,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -466,7 +502,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 12.0703125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -482,11 +518,13 @@
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "text": "You are not logged in",
                       "key": "qcdjgd3uix",
+                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 18,
+                      "rightColumn": 48,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "69g2k7a5kn",
+                      "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
@@ -494,9 +532,11 @@
                       "parentId": "e8e7xrrz25",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "fontSize": "1rem",
+                      "alignment": "start",
                       "minDynamicHeight": 4
                     },
                     {
@@ -511,8 +551,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 3,
-                      "bottomRow": 7,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -523,7 +563,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 22,
+                      "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -535,22 +575,27 @@
                       "text": "Take me to Login Page",
                       "isDisabled": false,
                       "key": "q9rc7qzz7t",
+                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
-                      "rightColumn": 38,
+                      "rightColumn": 64,
                       "isDefaultClickDisabled": true,
                       "widgetId": "v5qnc8thpw",
+                      "minWidth": 120,
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "e8e7xrrz25",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "responsiveBehavior": "hug",
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
+                      "placement": "CENTER",
+                      "alignment": "start"
                     }
                   ],
+                  "positioning": "vertical",
                   "isDisabled": false,
                   "key": "6pygm6o2kx",
                   "isDeprecated": false,
@@ -562,14 +607,30 @@
                   "version": 1,
                   "parentId": "in40vu2tv0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "responsiveBehavior": "fill",
+                  "flexLayers": [
+                    {
+                      "children": [
+                        {
+                          "id": "69g2k7a5kn",
+                          "align": "start"
+                        },
+                        {
+                          "id": "v5qnc8thpw",
+                          "align": "start"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ],
               "borderWidth": 1,
               "key": "a2rx3lhvzs",
+              "flexVerticalAlignment": "end",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 53,
+              "rightColumn": 64,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "in40vu2tv0",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -591,16 +652,38 @@
                   "index": 1
                 }
               },
+              "minWidth": 450,
               "isVisible": true,
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "originalTopRow": 21,
+              "responsiveBehavior": "fill",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "originalBottomRow": 36,
+              "alignment": "center",
               "minDynamicHeight": 15
+            }
+          ],
+          "positioning": "vertical",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "cvhslcmyfp",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "in40vu2tv0",
+                  "align": "center"
+                }
+              ]
             }
           ]
         },

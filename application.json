@@ -36,6 +36,11 @@
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    }
+  },
   "color": "#EAEDFB",
   "icon": "bag",
   "unpublishedAppLayout": {

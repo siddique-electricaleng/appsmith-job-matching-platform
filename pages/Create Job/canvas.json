@@ -13,15 +13,17 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 866.0000000000001,
           "containerStyle": "none",
           "snapRows": 60,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
-          "minHeight": 620,
+          "version": 79,
+          "minHeight": 790,
+          "useAutoLayout": true,
           "parentColumnSpace": 1,
+          "responsiveBehavior": "fill",
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
@@ -38,7 +40,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 77,
+              "bottomRow": 78.60000000000001,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -60,12 +62,13 @@
                   "widgetName": "Canvas2Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 770,
+                  "bottomRow": 786.0000000000001,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
                   "hideCard": true,
-                  "minHeight": 100,
+                  "minHeight": 770,
+                  "useAutoLayout": true,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -83,7 +86,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 10,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -98,12 +101,13 @@
                           "widgetName": "Canvas3Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 100,
+                          "bottomRow": 60,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
                           "hideCard": true,
-                          "minHeight": 100,
+                          "minHeight": 60,
+                          "useAutoLayout": true,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
@@ -140,6 +144,7 @@
                               ],
                               "isDisabled": false,
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
                               "rightColumn": 3,
                               "iconName": "home",
@@ -150,64 +155,10 @@
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
-                            },
-                            {
-                              "resetFormOnClick": false,
-                              "boxShadow": "none",
-                              "widgetName": "logout_feed",
-                              "onClick": "{{\n(() =>{storeValue(\"access_token\",undefined);\nclearStore();\nnavigateTo(\"Login-Signup\");\n})()\n}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 4,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 11.7607421875,
-                              "dynamicTriggerPathList": [
-                                {
-                                  "key": "onClick"
-                                }
-                              ],
-                              "leftColumn": 54,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "text": "Log Out",
-                              "isDisabled": false,
-                              "key": "percp595ts",
-                              "isDeprecated": false,
-                              "rightColumn": 60,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "ed5kph8l6t",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "y3rygxgq3d",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "disabledWhenInvalid": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
                             },
                             {
                               "boxShadow": "none",
@@ -233,7 +184,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 4,
+                              "leftColumn": 3,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -241,8 +192,9 @@
                               ],
                               "isDisabled": false,
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 7,
+                              "rightColumn": 6,
                               "iconName": "briefcase",
                               "widgetId": "qc6bp96w6s",
                               "minWidth": 50,
@@ -251,8 +203,10 @@
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
                             },
                             {
                               "boxShadow": "none",
@@ -273,7 +227,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 16.0625,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
+                              "leftColumn": 6,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -281,8 +235,9 @@
                               ],
                               "isDisabled": false,
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 11,
+                              "rightColumn": 9,
                               "iconName": "people",
                               "widgetId": "gr96uh7w43",
                               "minWidth": 50,
@@ -291,51 +246,10 @@
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "IconButton4",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Icon Button",
-                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-                              "searchTags": [
-                                "click",
-                                "submit"
-                              ],
-                              "topRow": 0,
-                              "bottomRow": 4,
-                              "tooltip": "Messages",
-                              "parentRowSpace": 10,
-                              "type": "ICON_BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 16.0625,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 16,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "isDisabled": false,
-                              "key": "xhl8endnn2",
-                              "isDeprecated": false,
-                              "rightColumn": 19,
-                              "iconName": "send-message",
-                              "widgetId": "7u303cc2g1",
-                              "minWidth": 50,
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "y3rygxgq3d",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
                             },
                             {
                               "boxShadow": "none",
@@ -356,6 +270,52 @@
                               "animateLoading": true,
                               "parentColumnSpace": 16.0625,
                               "dynamicTriggerPathList": [],
+                              "leftColumn": 9,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
+                              "isDeprecated": false,
+                              "rightColumn": 12,
+                              "iconName": "add",
+                              "widgetId": "w5xpv5b5vj",
+                              "minWidth": 50,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "y3rygxgq3d",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "hug",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "IconButton4",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "tooltip": "Messages",
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 16.0625,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 12,
                               "dynamicBindingPathList": [
                                 {
@@ -367,18 +327,21 @@
                               ],
                               "isDisabled": false,
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
                               "rightColumn": 15,
-                              "iconName": "add",
-                              "widgetId": "w5xpv5b5vj",
+                              "iconName": "send-message",
+                              "widgetId": "7u303cc2g1",
                               "minWidth": 50,
                               "isVisible": true,
                               "version": 1,
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
                             },
                             {
                               "boxShadow": "none",
@@ -412,7 +375,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 20,
+                              "leftColumn": 15,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -429,8 +392,9 @@
                               ],
                               "isDisabled": "{{\nappsmith.store.user.Role=== (\"Recruiter\")?false:true\n}}",
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 23,
+                              "rightColumn": 18,
                               "iconName": "cube-add",
                               "widgetId": "qb08jzt95v",
                               "minWidth": 50,
@@ -439,8 +403,70 @@
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "TERTIARY"
+                              "buttonVariant": "TERTIARY",
+                              "alignment": "start"
+                            },
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "logout_feed",
+                              "onClick": "{{\n(() =>{storeValue(\"access_token\",undefined);\nclearStore();\nnavigateTo(\"Login-Signup\");\n})()\n}}",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 11.7607421875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 54.786407766990294,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Log Out",
+                              "isDisabled": false,
+                              "key": "percp595ts",
+                              "flexVerticalAlignment": "end",
+                              "isDeprecated": false,
+                              "rightColumn": 61,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "ed5kph8l6t",
+                              "minWidth": 120,
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "y3rygxgq3d",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "hug",
+                              "disabledWhenInvalid": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER",
+                              "alignment": "end"
                             },
                             {
                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
@@ -469,6 +495,7 @@
                               ],
                               "isDisabled": false,
                               "key": "xhl8endnn2",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "iconName": "person",
@@ -479,10 +506,13 @@
                               "parentId": "y3rygxgq3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "responsiveBehavior": "hug",
                               "borderRadius": "1.5rem",
-                              "buttonVariant": "PRIMARY"
+                              "buttonVariant": "PRIMARY",
+                              "alignment": "end"
                             }
                           ],
+                          "positioning": "vertical",
                           "key": "a2xqt8zb76",
                           "isDeprecated": false,
                           "rightColumn": 393,
@@ -496,11 +526,49 @@
                           "renderMode": "CANVAS",
                           "isLoading": false,
                           "responsiveBehavior": "fill",
-                          "flexLayers": []
+                          "flexLayers": [
+                            {
+                              "children": [
+                                {
+                                  "id": "nbmbdrax1v",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "qc6bp96w6s",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "gr96uh7w43",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "w5xpv5b5vj",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "7u303cc2g1",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "qb08jzt95v",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "ed5kph8l6t",
+                                  "align": "end"
+                                },
+                                {
+                                  "id": "7861nnlxjq",
+                                  "align": "end"
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ],
                       "borderWidth": "0",
                       "key": "1zf4chrfnh",
+                      "flexVerticalAlignment": "start",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -518,6 +586,7 @@
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 10,
+                      "alignment": "start",
                       "minDynamicHeight": 10
                     },
                     {
@@ -530,8 +599,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 10,
-                      "bottomRow": 14,
+                      "topRow": 7.2,
+                      "bottomRow": 11.2,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -559,11 +628,12 @@
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "text": "{{appsmith.store.user.Name}}, {{appsmith.store.user.Role}}",
                       "key": "68l0ql9hcz",
+                      "flexVerticalAlignment": "end",
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "disableLink": true,
                       "textAlign": "RIGHT",
-                      "dynamicHeight": "FIXED",
+                      "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "0979uqbjx9",
                       "minWidth": 450,
                       "isVisible": true,
@@ -579,6 +649,7 @@
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 14,
                       "fontSize": "1rem",
+                      "alignment": "start",
                       "minDynamicHeight": 4
                     },
                     {
@@ -596,8 +667,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 14,
-                      "bottomRow": 75,
+                      "topRow": 12.4,
+                      "bottomRow": 76.60000000000001,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -622,12 +693,13 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 610,
+                          "bottomRow": 642,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
                           "hideCard": true,
-                          "minHeight": 400,
+                          "minHeight": 570,
+                          "useAutoLayout": true,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
@@ -641,15 +713,15 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 1,
-                              "bottomRow": 5,
+                              "topRow": 0,
+                              "bottomRow": 4,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
                               "overflow": "NONE",
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 1.5,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -665,8 +737,9 @@
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "text": "Hiring Details",
                               "key": "huqesyi3q1",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
-                              "rightColumn": 25.5,
+                              "rightColumn": 64,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "qq12i8mv2n",
@@ -682,6 +755,319 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "fontSize": "1.25rem",
+                              "alignment": "start",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 5.2,
+                              "labelWidth": "11",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "placeholderText": "Enter the Job Title",
+                              "isDisabled": false,
+                              "flexVerticalAlignment": "end",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "center",
+                              "widgetName": "input_jobTitle_createJob",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 9.2,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 10.638671875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jcxs3gjt5t",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "fo7aa3eer7",
+                              "minWidth": 450,
+                              "label": "Job Title",
+                              "parentId": "doyni4uj3j",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 10.4,
+                              "labelWidth": "11",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "placeholderText": "Company name hiring for this job",
+                              "isDisabled": false,
+                              "flexVerticalAlignment": "end",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "center",
+                              "widgetName": "input_companyName_createJob",
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 14.4,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 10.638671875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jcxs3gjt5t",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "l8lsjaymwv",
+                              "minWidth": 450,
+                              "label": "Company Name",
+                              "parentId": "doyni4uj3j",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 15.600000000000001,
+                              "labelWidth": "11",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "placeholderText": "Location of the job/workplace",
+                              "isDisabled": false,
+                              "flexVerticalAlignment": "end",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "center",
+                              "widgetName": "input_location_createJob",
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 19.6,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 10.638671875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jcxs3gjt5t",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "wt1jltx89z",
+                              "minWidth": 450,
+                              "label": "Location",
+                              "parentId": "doyni4uj3j",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 20.8,
+                              "labelWidth": "11",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "placeholderText": "Monthly Salary of the position",
+                              "isDisabled": false,
+                              "flexVerticalAlignment": "end",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "center",
+                              "widgetName": "input_salary_createJob",
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 24.8,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 10.638671875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jcxs3gjt5t",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "3ruq11y62k",
+                              "minWidth": 450,
+                              "label": "Salary (in US$)",
+                              "parentId": "doyni4uj3j",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "topRow": 26,
+                              "labelWidth": "11",
+                              "type": "INPUT_WIDGET_V2",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "MULTI_LINE_TEXT",
+                              "placeholderText": "Enter the job Description",
+                              "isDisabled": false,
+                              "flexVerticalAlignment": "end",
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "version": 2,
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "alignment": "center",
+                              "widgetName": "input_description_createJob",
+                              "displayName": "Input",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "bottomRow": 57,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "shouldScrollContents": true,
+                              "parentColumnSpace": 10.638671875,
+                              "dynamicTriggerPathList": [],
+                              "labelPosition": "Top",
+                              "key": "jcxs3gjt5t",
+                              "labelTextSize": "0.875rem",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "widgetId": "3blu5lslt7",
+                              "minWidth": 450,
+                              "label": "Description",
+                              "parentId": "doyni4uj3j",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -695,8 +1081,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 55,
-                              "bottomRow": 59,
+                              "topRow": 58.2,
+                              "bottomRow": 62.2,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -712,6 +1098,7 @@
                               "text": "Reset",
                               "isDisabled": false,
                               "key": "9bfrx6ths3",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
                               "rightColumn": 16,
                               "isDefaultClickDisabled": true,
@@ -729,309 +1116,8 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "originalBottomRow": 56,
                               "buttonVariant": "SECONDARY",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "input_jobTitle_createJob",
-                              "dynamicPropertyPathList": [],
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 6,
-                              "bottomRow": 10,
-                              "parentRowSpace": 10,
-                              "labelWidth": "11",
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.638671875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "placeholderText": "Enter the Job Title",
-                              "isDisabled": false,
-                              "key": "jcxs3gjt5t",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "fo7aa3eer7",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Job Title",
-                              "version": 2,
-                              "parentId": "doyni4uj3j",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "input_companyName_createJob",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 10,
-                              "bottomRow": 14,
-                              "parentRowSpace": 10,
-                              "labelWidth": "11",
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.638671875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "placeholderText": "Company name hiring for this job",
-                              "isDisabled": false,
-                              "key": "jcxs3gjt5t",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "l8lsjaymwv",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Company Name",
-                              "version": 2,
-                              "parentId": "doyni4uj3j",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "input_location_createJob",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 14,
-                              "bottomRow": 18,
-                              "parentRowSpace": 10,
-                              "labelWidth": "11",
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.638671875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "placeholderText": "Location of the job/workplace",
-                              "isDisabled": false,
-                              "key": "jcxs3gjt5t",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "wt1jltx89z",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Location",
-                              "version": 2,
-                              "parentId": "doyni4uj3j",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "input_salary_createJob",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 18,
-                              "bottomRow": 22,
-                              "parentRowSpace": 10,
-                              "labelWidth": "11",
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.638671875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "placeholderText": "Monthly Salary of the position",
-                              "isDisabled": false,
-                              "key": "jcxs3gjt5t",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "3ruq11y62k",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Salary (in US$)",
-                              "version": 2,
-                              "parentId": "doyni4uj3j",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "input_description_createJob",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "displayName": "Input",
-                              "topRow": 23,
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "bottomRow": 54,
-                              "parentRowSpace": 10,
-                              "labelWidth": "11",
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "shouldScrollContents": true,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.638671875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "labelStyle": "",
-                              "inputType": "MULTI_LINE_TEXT",
-                              "placeholderText": "Enter the job Description",
-                              "isDisabled": false,
-                              "key": "jcxs3gjt5t",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 62,
-                              "dynamicHeight": "FIXED",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "widgetId": "3blu5lslt7",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "Description",
-                              "version": 2,
-                              "parentId": "doyni4uj3j",
-                              "isLoading": false,
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
+                              "placement": "CENTER",
+                              "alignment": "start"
                             },
                             {
                               "resetFormOnClick": true,
@@ -1045,8 +1131,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 55,
-                              "bottomRow": 59,
+                              "topRow": 58.2,
+                              "bottomRow": 62.2,
                               "tooltip": "Submit job information",
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -1068,6 +1154,7 @@
                               "text": "Submit",
                               "isDisabled": false,
                               "key": "9bfrx6ths3",
+                              "flexVerticalAlignment": "end",
                               "isDeprecated": false,
                               "rightColumn": 64,
                               "isDefaultClickDisabled": true,
@@ -1085,9 +1172,11 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "originalBottomRow": 56,
                               "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
+                              "placement": "CENTER",
+                              "alignment": "end"
                             }
                           ],
+                          "positioning": "vertical",
                           "key": "0ulgjw7hi2",
                           "isDeprecated": false,
                           "rightColumn": 224.0390625,
@@ -1101,12 +1190,74 @@
                           "renderMode": "CANVAS",
                           "isLoading": false,
                           "responsiveBehavior": "fill",
-                          "flexLayers": []
+                          "flexLayers": [
+                            {
+                              "children": [
+                                {
+                                  "id": "qq12i8mv2n",
+                                  "align": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "fo7aa3eer7",
+                                  "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "l8lsjaymwv",
+                                  "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "wt1jltx89z",
+                                  "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "3ruq11y62k",
+                                  "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "3blu5lslt7",
+                                  "align": "center"
+                                }
+                              ]
+                            },
+                            {
+                              "children": [
+                                {
+                                  "id": "u702ow1r5t",
+                                  "align": "start"
+                                },
+                                {
+                                  "id": "dwvgtp9gkc",
+                                  "align": "end"
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ],
                       "borderWidth": "1",
                       "positioning": "fixed",
                       "key": "ygsh0gnm5o",
+                      "flexVerticalAlignment": "end",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -1122,9 +1273,11 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 75,
+                      "alignment": "start",
                       "minDynamicHeight": 10
                     }
                   ],
+                  "positioning": "vertical",
                   "key": "1mtt58cz4v",
                   "isDeprecated": false,
                   "rightColumn": 105.4375,
@@ -1138,11 +1291,37 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "responsiveBehavior": "fill",
-                  "flexLayers": []
+                  "flexLayers": [
+                    {
+                      "children": [
+                        {
+                          "id": "f9nn0ik96z",
+                          "align": "start"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "id": "0979uqbjx9",
+                          "align": "start"
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "id": "ak4b62f6kp",
+                          "align": "start"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ],
               "borderWidth": "1",
               "key": "mqi6ayl6ye",
+              "flexVerticalAlignment": "start",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
               "rightColumn": 64,
@@ -1160,7 +1339,19 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "originalBottomRow": 77,
+              "alignment": "start",
               "minDynamicHeight": 10
+            }
+          ],
+          "positioning": "vertical",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "difu6z60k8",
+                  "align": "start"
+                }
+              ]
             }
           ]
         },
